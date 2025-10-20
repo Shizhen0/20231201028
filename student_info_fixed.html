@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息 - 石珍</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        .header {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+        .info-card {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #4299e1;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .label {
+            font-weight: bold;
+            color: #4a5568;
+        }
+        .value {
+            color: #2d3748;
+            font-size: 1.1em;
+        }
+        .welcome {
+            color: #718096;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .status {
+            background: #e6fffa;
+            border: 1px solid #81e6d9;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+            color: #234e52;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 学生信息展示</h1>
+            <p>欢迎访问我的个人信息页面</p>
+        </div>
+        
+        <div class="info-card">
+            <div class="info-item">
+                <span class="label">学号：</span>
+                <span class="value">20231201028</span>
+            </div>
+            <div class="info-item">
+                <span class="label">姓名：</span>
+                <span class="value">石珍</span>
+            </div>
+            <div class="info-item">
+                <span class="label">班级：</span>
+                <span class="value">医学信息工程2023</span>
+            </div>
+        </div>
+        
+        <div class="status">
+            ✅ 页面已修复CORS问题，可以直接在浏览器中打开！
+        </div>
+        
+        <p class="welcome">这是一个修复了CORS问题的独立HTML页面</p>
+    </div>
+
+    <script>
+        // 避免CORS错误的解决方案
+        console.log('页面加载成功！学生信息：');
+        console.log('学号：20231201028');
+        console.log('姓名：石珍');
+        console.log('班级：医学信息工程2023');
+        
+        // 如果需要访问外部API，可以使用以下方法之一：
+        // 1. 使用本地服务器运行（推荐）
+        // 2. 使用代理服务
+        // 3. 或者直接避免跨域请求
+    </script>
+</body>
+</html>
